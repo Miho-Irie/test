@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2 class="m-5">変更</h2>
+<form class="m-5" action="/update/{{ post.id }}" method="POST">
+    <div class="form-group pb-3">
+        <label for="date">日付</label>
+        <input type="date" name="date" value="{{ post.date.date() }}" required>  
+    </div>
+    <div class="form-group pb-3">
+        <label for="name">茶名</label>
+        <input type="text" class="form-control" name="name" value="{{ post.name }}">
+    </div>
+    <div class="form-group pb-3">
+        <label for="place">産地</label>
+        <input type="text" class="form-control" name="place" value="{{ post.place }}">
+    </div>
+    <div class="form-group pb-3">
+        <label for="year">収穫年</label>
+        <input type="text" class="form-control" name="year" value="{{ post.year }}">
+    </div>
+    <div class="form-group pb-3">
+        <label for="season">季節</label>
+        <input type="text" class="form-control" name="season" value="{{ post.season }}">
+    </div>
+    <div class="form-group pb-3">
+        <label for="kind">種類</label>
+        <input type="text" class="form-control" name="kind" value="{{ post.kind }}">
+    </div>
+    <div class="form-group pb-3">
+        <label for="detail">製造上の特徴</label>
+        <input type="text" class="form-control" name="detail" value="{{ post.detail }}">
+    </div>
+    <div class="form-group pb-3">
+        <label for="img">画像</label>
+        <input type="text" class="form-control" name="img" value="{{ post.img }}">
+    </div>
+    <a class="btn btn-outline-primary pb-3" href="/" role="button">Return</a>
+    <button type="submit" class="btn btn-primary pb-3">Change</button>
+
+
+
+
+
+
+<!-- <h2>編集</h2>
+<form action="/update/{{ post.id }}" method="POST">
+    <label for="date">日付</label>
+    <input type="date" name="date" value={{ post.date.date() }} required> 
+    <label for="name">茶名</label>
+    <input type="text" name="name" value={{ post.name }}>
+    <label for="place">産地</label>
+    <input type="text" name="place" value={{ post.place }}>
+    <label for="year">収穫年</label>
+    <input type="text"name="year" value={{ post.year }}>
+    <label for="season">季節</label>
+    <input type="text" name="season" value={{ post.season }}>
+    <label for="kind">種類</label>
+    <input type="text" name="kind" value={{ post.kind }}>
+    <label for="detail">製造上の特徴</label>
+    <input type="text" name="detail" value={{ post.detail }}>
+    <label for="img">画像</label>
+    <input type="text" name="img" value={{ post.img }}>
+    <input type="submit" value="Change"> -->
+</form>
+{% endblock %}
+
+
+
+

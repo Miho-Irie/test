@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2 class="m-5">新規追加</h2>
+<form class="m-5" action="/" method="POST">
+    <div class="form-group pb-3">
+        <label for="date">日付</label>
+        <input type="date" name="date" required>  
+    </div>
+    <div class="form-group pb-3">
+        <label for="name">茶名</label>
+        <input type="text" class="form-control" name="name">
+    </div>
+    <div class="form-group pb-3">
+        <label for="place">産地</label>
+        <input type="text" class="form-control" name="place">
+    </div>
+    <div class="form-group pb-3">
+        <label for="year">収穫年</label>
+        <input type="text" class="form-control" name="year">
+    </div>
+    <div class="form-group pb-3">
+        <label for="season">季節</label>
+        <input type="text" class="form-control" name="season">
+    </div>
+    <div class="form-group pb-3">
+        <label for="kind">種類</label>
+        <input type="text" class="form-control" name="kind">
+    </div>
+    <div class="form-group pb-3">
+        <label for="detail">製造上の特徴</label>
+        <input type="text" class="form-control" name="detail">
+    </div>
+    <div class="form-group pb-3">
+        <label for="img">画像</label>
+        <input type="text" class="form-control" name="img">
+    </div>
+    <a class="btn btn-outline-primary pb-3" href="/" role="button">Return</a>
+    <button type="submit" class="btn btn-primary pb-3">Create</button>
+  </form>
+
+
+<!-- <form action="/" method="POST">
+    <label for="date">日付</label>
+    <input type="date" name="date" required> 
+    <label for="name">茶名</label>
+    <input type="text" name="name">
+    <label for="place">産地</label>
+    <input type="text" name="place">
+    <label for="year">収穫年</label>
+    <input type="text" name="year">
+    <label for="season">季節</label>
+    <input type="text" name="season">
+    <label for="kind">種類</label>
+    <input type="text" name="kind">
+    <label for="detail">製造上の特徴</label>
+    <input type="text" name="detail">
+    <label for="img">画像</label>
+    <input type="text" name="img"> -->
+    <!-- <input type="submit" value="Create">
+</form> -->
+{% endblock %}
+
+
+
+
+
+<!-- <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table> -->
